@@ -1,0 +1,20 @@
+When mathcad worksheet is started, a prompt will appear:
+
+**************************
+This worksheet contains scriptable objects, which may execute viruses
+or other harmful code3.
+
+Would you like to disable evaluation of these objects
+***************************
+
+Since internet database update is implemented as a VB-script, it is needed for normal
+operation of the worksheet, so please answer "NO" upon this request.
+
+To disable such requests in the future, you can go to Tools --> Preferences--> Script Security
+and check "Low Security".check box.
+
+
+If database download error occures, you might be using Vista or XP. 
+In this case install windows power shell 2.0 by from the link below. No need for Win 7 or above.
+http://support.microsoft.com/kb/968929
+

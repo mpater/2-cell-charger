@@ -1,0 +1,268 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stm32
+LIBS:Oscillators
+LIBS:2-cell charger
+LIBS:switches
+LIBS:2-cell charger-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCP73223 U1
+U 1 1 593416BF
+P 5600 2750
+F 0 "U1" H 5250 3300 60  0000 C CNN
+F 1 "MCP73223" H 5400 3200 60  0000 C CNN
+F 2 "Housings_DFN_QFN:DFN-10-1EP_3x3mm_Pitch0.5mm" H 5400 3100 60  0001 C CNN
+F 3 "" H 5400 3100 60  0001 C CNN
+	1    5600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 593416C6
+P 4500 2750
+F 0 "R1" V 4580 2750 50  0000 C CNN
+F 1 "1k" V 4400 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4430 2750 50  0001 C CNN
+F 3 "" H 4500 2750 50  0001 C CNN
+	1    4500 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED_ALT D1
+U 1 1 593416CD
+P 4000 2750
+F 0 "D1" H 4000 2650 50  0000 C CNN
+F 1 "RED_LED" H 4000 2850 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 4000 2750 50  0001 C CNN
+F 3 "" H 4000 2750 50  0001 C CNN
+	1    4000 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C1
+U 1 1 593416D4
+P 3350 2700
+F 0 "C1" H 3375 2800 50  0000 L CNN
+F 1 "4.7uF" H 3375 2600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3388 2550 50  0001 C CNN
+F 3 "" H 3350 2700 50  0001 C CNN
+	1    3350 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 593416DB
+P 7250 2650
+F 0 "C2" H 7275 2750 50  0000 L CNN
+F 1 "4.7uF" H 7275 2550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7288 2500 50  0001 C CNN
+F 3 "" H 7250 2650 50  0001 C CNN
+	1    7250 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 593416E2
+P 6800 3050
+F 0 "R2" V 6880 3050 50  0000 C CNN
+F 1 "1.15k" V 6700 3050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6730 3050 50  0001 C CNN
+F 3 "" H 6800 3050 50  0001 C CNN
+	1    6800 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR2
+U 1 1 59341705
+P 3350 2950
+F 0 "#PWR2" H 3350 2700 50  0001 C CNN
+F 1 "Earth" H 3350 2800 50  0001 C CNN
+F 2 "" H 3350 2950 50  0001 C CNN
+F 3 "" H 3350 2950 50  0001 C CNN
+	1    3350 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR3
+U 1 1 5934170B
+P 6450 3350
+F 0 "#PWR3" H 6450 3100 50  0001 C CNN
+F 1 "Earth" H 6450 3200 50  0001 C CNN
+F 2 "" H 6450 3350 50  0001 C CNN
+F 3 "" H 6450 3350 50  0001 C CNN
+	1    6450 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR1
+U 1 1 59341711
+P 2400 2950
+F 0 "#PWR1" H 2400 2700 50  0001 C CNN
+F 1 "Earth" H 2400 2800 50  0001 C CNN
+F 2 "" H 2400 2950 50  0001 C CNN
+F 3 "" H 2400 2950 50  0001 C CNN
+	1    2400 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2450 4950 2450
+Wire Wire Line
+	3350 2450 3350 2550
+Wire Wire Line
+	3850 2750 3700 2750
+Wire Wire Line
+	3700 2750 3700 2450
+Connection ~ 3700 2450
+Wire Wire Line
+	4150 2750 4350 2750
+Wire Wire Line
+	4650 2750 4950 2750
+Wire Wire Line
+	4950 2550 4900 2550
+Wire Wire Line
+	4900 2550 4900 2450
+Connection ~ 4900 2450
+Wire Wire Line
+	3350 2950 3350 2850
+Connection ~ 3350 2450
+Wire Wire Line
+	2150 2650 2400 2650
+Wire Wire Line
+	2400 2550 2400 2950
+Wire Wire Line
+	6350 2550 6450 2550
+Wire Wire Line
+	6450 2550 6450 2450
+Wire Wire Line
+	6350 2450 7600 2450
+Wire Wire Line
+	7250 2000 7250 2500
+Connection ~ 6450 2450
+Wire Wire Line
+	6350 2950 6450 2950
+Wire Wire Line
+	6450 2950 6450 3350
+Wire Wire Line
+	6450 3050 6350 3050
+Wire Wire Line
+	6450 3150 6350 3150
+Connection ~ 6450 3050
+Connection ~ 6450 3150
+$Comp
+L Earth #PWR4
+U 1 1 59341730
+P 6800 3350
+F 0 "#PWR4" H 6800 3100 50  0001 C CNN
+F 1 "Earth" H 6800 3200 50  0001 C CNN
+F 2 "" H 6800 3350 50  0001 C CNN
+F 3 "" H 6800 3350 50  0001 C CNN
+	1    6800 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR5
+U 1 1 59341736
+P 7250 2900
+F 0 "#PWR5" H 7250 2650 50  0001 C CNN
+F 1 "Earth" H 7250 2750 50  0001 C CNN
+F 2 "" H 7250 2900 50  0001 C CNN
+F 3 "" H 7250 2900 50  0001 C CNN
+	1    7250 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 2900 7250 2800
+Wire Wire Line
+	6350 2750 6800 2750
+Wire Wire Line
+	6800 2750 6800 2900
+Wire Wire Line
+	6800 3200 6800 3350
+Text GLabel 7600 2450 2    60   Input ~ 0
+Pack_POS
+Connection ~ 7250 2450
+Text GLabel 7600 3450 2    60   Input ~ 0
+Pack_NEG
+$Comp
+L Earth #PWR6
+U 1 1 59341743
+P 7400 3550
+F 0 "#PWR6" H 7400 3300 50  0001 C CNN
+F 1 "Earth" H 7400 3400 50  0001 C CNN
+F 2 "" H 7400 3550 50  0001 C CNN
+F 3 "" H 7400 3550 50  0001 C CNN
+	1    7400 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 3450 7400 3450
+Wire Wire Line
+	7400 3200 7400 3550
+$Comp
+L BARREL_JACK J1
+U 1 1 5934182D
+P 1850 2550
+F 0 "J1" H 1850 2745 50  0000 C CNN
+F 1 "BARREL_JACK" H 1850 2395 50  0000 C CNN
+F 2 "2-cell charger:BARREL_JACK_SMD" H 1850 2550 50  0001 C CNN
+F 3 "" H 1850 2550 50  0001 C CNN
+	1    1850 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2550 2400 2550
+Connection ~ 2400 2650
+Text Notes 1500 2150 0    60   ~ 0
+7-13Vin\n200-1000mA charge (set PROG pin)
+Text HLabel 7650 2000 2    60   Input ~ 0
+PACK_POS
+Text HLabel 7650 3200 2    60   Input ~ 0
+PACK_NEG
+Wire Wire Line
+	7650 2000 7250 2000
+Wire Wire Line
+	7650 3200 7400 3200
+Connection ~ 7400 3450
+$EndSCHEMATC

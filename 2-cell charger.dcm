@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BQ28Z610
+D Gas Gauge, Protection and BMS for 1-2S Li packs
+F BQ28Z610 - Gas gauge and protection for 1-2 series cells.pdf
+$ENDCMP
+#
+$CMP MCP73223
+D LiFePO4 Charge Controller with Protection
+F MCP73223 - LiFePO4 Charge Controller with Protection.pdf
+$ENDCMP
+#
+#End Doc Library
